@@ -25,7 +25,9 @@
     npm run dev
     ```
 
-3. Create, Read, Update, and Delete books as per your wish.
+3 . Navigate to the link http://localhost:5173/
+
+4 . Create, Read, Update, and Delete books as per your wish.
 
 
 # Application
