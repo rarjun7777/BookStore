@@ -15,11 +15,13 @@
 
     ```sh
     # In the frontend folder
+    npm i
     npm run dev
     ```
 
     ```sh
     # In the backend folder
+    npm i
     npm run dev
     ```
 
