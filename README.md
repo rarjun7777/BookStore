@@ -235,8 +235,3 @@ This project is open source and available under the [MIT License](LICENSE).
 
 4 . Create, Read, Update, and Delete books as per your wish.
 
-
-
-
-
->>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
