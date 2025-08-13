@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BookStore Frontend
 
 This is the frontend application for the BookStore project, built with React.js and Vite.
@@ -67,3 +68,13 @@ This frontend connects to the backend API running on `http://localhost:5555`. Ma
 - **Error Handling**: User-friendly error messages
 - **Loading States**: Smooth loading animations
 - **Form Validation**: Client-side and server-side validation
+=======
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846

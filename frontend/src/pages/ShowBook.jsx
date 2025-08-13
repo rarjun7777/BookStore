@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import api from "../utils/api";
+=======
+import axios from "axios";
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
 import { useParams } from "react-router-dom";
 import BackButton from "../components/BackButton";
 import Spinner from "../components/Spinner";
@@ -11,8 +15,13 @@ const ShowBook = () => {
 
   useEffect(() => {
     setLoading(true);
+<<<<<<< HEAD
     api
       .get(`/books/${id}`)
+=======
+    axios
+      .get(`http://localhost:5555/books/${id}`)
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
       .then((response) => {
         setBook(response.data);
         setLoading(false);
@@ -23,6 +32,7 @@ const ShowBook = () => {
       });
   }, []);
 
+<<<<<<< HEAD
   // Helper function to format publish year
   const formatPublishYear = (year) => {
     if (!year || year === 0 || year === 1970) {
@@ -31,6 +41,8 @@ const ShowBook = () => {
     return year;
   };
 
+=======
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
   return (
     <div className="p-4">
       <BackButton />
@@ -53,7 +65,11 @@ const ShowBook = () => {
           </div>
           <div className="my-4">
             <span className="text-xl mr-4 text-gray-500">Publish Year</span>
+<<<<<<< HEAD
             <span>{formatPublishYear(book.publishYear)}</span>
+=======
+            <span>{book.publishYear}</span>
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
           </div>
           <div className="my-4">
             <span className="text-xl mr-4 text-gray-500">Create Time</span>

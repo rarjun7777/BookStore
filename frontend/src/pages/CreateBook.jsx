@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import BackButton from "../components/BackButton";
 import Spinner from "../components/Spinner";
+<<<<<<< HEAD
 import api from "../utils/api";
+=======
+import axios from "axios";
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
 import { useNavigate } from "react-router-dom";
 import { useSnackbar } from "notistack";
 
@@ -20,8 +24,13 @@ const CreateBooks = () => {
       publishYear,
     };
     setLoading(true);
+<<<<<<< HEAD
     api
       .post("/books", data)
+=======
+    axios
+      .post("http://localhost:5555/books", data)
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Created successfully", { variant: "success" });

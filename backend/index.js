@@ -3,8 +3,11 @@ import { PORT, mongoDBURL } from "./config.js";
 import { Book } from "./models/bookModel.js";
 import mongoose from "mongoose";
 import booksRoute from "./routes/bookRoutes.js";
+<<<<<<< HEAD
 import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
+=======
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
 import cors from "cors";
 
 const app = express();
@@ -30,8 +33,11 @@ app.get("/", (request, response) => {
 });
 
 app.use("/books", booksRoute);
+<<<<<<< HEAD
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
+=======
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
 
 mongoose
   .connect(mongoDBURL)

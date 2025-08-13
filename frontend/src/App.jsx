@@ -1,13 +1,17 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+<<<<<<< HEAD
 import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Navigation from "./components/Navigation";
+=======
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
 import Home from "./pages/HomeBook";
 import CreateBook from "./pages/CreateBook";
 import ShowBook from "./pages/ShowBook";
 import EditBook from "./pages/EditBook";
 import DeleteBook from "./pages/DeleteBook";
+<<<<<<< HEAD
 import Profiles from "./pages/Profiles";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -72,6 +76,18 @@ const App = () => {
         } />
       </Routes>
     </AuthProvider>
+=======
+
+const App = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/books/create" element={<CreateBook />} />
+      <Route path="/books/details/:id" element={<ShowBook />} />
+      <Route path="/books/edit/:id" element={<EditBook />} />
+      <Route path="/books/delete/:id" element={<DeleteBook />} />
+    </Routes>
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
   );
 };
 

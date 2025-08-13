@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import BackButton from "../components/BackButton";
 import Spinner from "../components/Spinner";
+<<<<<<< HEAD
 import api from "../utils/api";
+=======
+import axios from "axios";
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
 import { useNavigate, useParams } from "react-router-dom";
 import { useSnackbar } from "notistack";
 
@@ -16,8 +20,13 @@ const EditBook = () => {
 
   useEffect(() => {
     setLoading(true);
+<<<<<<< HEAD
     api
       .get(`/books/${id}`)
+=======
+    axios
+      .get(`http://localhost:5555/books/${id}`)
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
       .then((response) => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear);
@@ -38,8 +47,13 @@ const EditBook = () => {
       publishYear,
     };
     setLoading(true);
+<<<<<<< HEAD
     api
       .put(`/books/${id}`, data)
+=======
+    axios
+      .put(`http://localhost:5555/books/${id}`, data)
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Edited successfully", { variant: "success" });

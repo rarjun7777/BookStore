@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import BackButton from "../components/BackButton";
 import Spinner from "../components/Spinner";
+<<<<<<< HEAD
 import api from "../utils/api";
+=======
+import axios from "axios";
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
 import { useNavigate, useParams } from "react-router-dom";
 import { useSnackbar } from "notistack";
 
@@ -13,8 +17,13 @@ const DeleteBook = () => {
 
   const handleDeleteBook = () => {
     setLoading(true);
+<<<<<<< HEAD
     api
       .delete(`/books/${id}`)
+=======
+    axios
+      .delete(`http://localhost:5555/books/${id}`)
+>>>>>>> 36c507ae5ce89a65ea8ac8a22c5b086900ae8846
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Deleted successfully", { variant: "success" });
